@@ -1,0 +1,14 @@
+/*
+styles.css
+Created by Tim Gibney
+1/24/2021
+FESD-FET-Week4
+*/
+
+#ol-inner-lower-case-letters {
+    list-style-type: lower-alpha;
+}
+
+div.instructions {
+    background-color: lightgray;
+}
