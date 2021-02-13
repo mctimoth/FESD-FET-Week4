@@ -1,7 +1,7 @@
 <!--
     index.html
     Created by Tim Gibney
-    1/24/2021
+    2/8/2021
     FESD-FET-Week4
 -->
 
@@ -19,49 +19,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FESD Week 4</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>FESD FET Week 4</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
 
-    <div class="instructions">
-        <h1>FESD FET Week 4 Instructions</h1>
-            <h2>
-                <ol>
+    <div class="container-fluid bg-dark text-light">
+        <h5>FESD FET Week 4 Instructions</h5>
+            <h6>
+                <ol type="1">
                     <li>Using HTML, Bootstrap, and JavaScript create a single page website
                         that contains the following:
-                        <ol id="ol-inner-lower-case-letters">
+                        <ol type="a">
                             <li>A Bootstrap styled table representing your choice of data.</li>
                             <li>A Bootstrap styled form that allows a user to add a new row 
                                 to the table when submitted.</li>
                         </ol>
                     </li>
                 </ol>
-            </h2>
+            </h6>
     </div>
 
-    <button id="my-button">Button 1</button>
-    <button>Button 2</button>
-    <button class="my-class">Button 3</button>
-    <button>Button 4</button>
-    <button class="my-class">Button 5</button>
-    <h1 class="my-class">Hello World</h1>
-
-    <p id="content">Hello.</p>
-    <button id="btn">Change value.</button> <br>
-    <input id="remove-id">
-    <button id="remove">Remove Paragraph from DOM</button> <br>
-    <input type="text" id="new-text">
-    <button id="add">Add New Paragraph</button>
-
-    <div id="paragraphs">
-        <p id="content2">Hello.</p>
+    <div class="container">
+        <div class="table-responsive">
+            <table id="part-list" class="table table-sm table-bordered table-dark table-striped table-hover">
+                <tr><!--Row 0-->
+                    <th scope="col" colspan="8" class="text-center">Part List</th>
+                </tr>
+                <tr><!--Row 1-->
+                    <th scope="col">Line Item</th>
+                    <th scope="col">Part Number</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Class</th>
+                    <th scope="col">Entry Date</th>
+                    <th scope="col">Delete/Edit</th>
+                </tr>
+            </table>
+        </div>
     </div>
 
+    <br>
 
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="container">
+                        <h3 class="text-center">Please enter appropriate part information</h3>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="line-item">Line Item</label>
+                            <input type="text" class="form-control" id="line-item">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="part-number">Part Number</label>
+                            <input type="text" class="form-control" id="part-number">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <input type="text" class="form-control" id="description">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="text" class="form-control" id="quantity">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" class="form-control" id="location">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="class">Class</label>
+                            <input type="text" class="form-control" id="class">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="entry-date">Entry Date</label>
+                            <input type="date" class="form-control" id="entry-date">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <button id="add-part" class="btn btn-primary form-control">Add Part</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <hr>
+
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <button id="my-button">Button 1</button>
+            <button>Button 2</button>
+            <button class="my-class">Button 3</button>
+            <button>Button 4</button>
+            <button class="my-class">Button 5</button>
+        </div>
+
+        <hr>
+
+        <h1 class="my-class">Hello World</h1>
+        <p id="content">Hello.</p>
+        <button id="btn">Change value.</button> <br>
+        <input id="remove-id">
+        <button id="remove">Remove Paragraph from DOM</button> <br>
+        <input type="text" id="new-text">
+        <button id="add">Add New Paragraph</button>
+
+        <div id="paragraphs">
+            <p id="content2">Hello.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2 class="text-center">Task List</h2>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-start-date">Start Date</label>
+                            <input type="date" class="form-control" id="new-start-date">    
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-end-date">End Date</label>
+                            <input type="date" class="form-control" id="new-end-date">    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-task">Task</label>
+                            <input type="text" class="form-control" id="new-task" placeholder="Task">    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <button id="create" class="btn btn-primary form-control">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <table id="list" class="table table-dark table-striped">
+            <tr>
+                <th>Task</th>
+                <th>Date Created</th>
+                <th>Start Date</th>
+                <th>Due Date</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+
+<hr>
+
+    <h2 class="text-center">Team Building</h2>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-team-name">Team Name</label>
+                            <input type="text" class="form-control" id="new-team-name">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button id="new-team" class="btn btn-primary form-control">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div id="teams">
+        
+        </div>
+    </div>
 
     <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     
 </body>
 </html>

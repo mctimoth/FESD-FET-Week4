@@ -1,0 +1,16 @@
+{
+  "name": "FESD-FET-Week4",
+  "version": "1.0.0",
+  "description": "��F\u0000E\u0000S\u0000D\u0000 \u0000W\u0000e\u0000e\u0000k\u0000 \u00004\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1"
+  }
+}
